@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>⚽ Gio's Football Brain — a 20-minute course</title>
+<meta name="description" content="A 20-minute football course for a sharp young fan: offside done properly, formations, pressing, expected goals (xG) and Korea\'s football story — with pictures and a hard final test.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#101a2b">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏱️</text></svg>">
+<script>
+  /* set theme before first paint to avoid a flash */
+  (function () {
+    try {
+      var t = localStorage.getItem("gio-football.theme");
+      document.documentElement.dataset.theme = (t === "light" || t === "dark") ? t : "dark";
+    } catch (e) { document.documentElement.dataset.theme = "dark"; }
+  })();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="confetti" aria-hidden="true"></div>
+
+<header class="topbar">
+  <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">☰</button>
+  <span class="brand-badge" aria-hidden="true">⚽</span>
+  <div class="brand">
+    <span class="brand-title">Football Brain</span>
+    <span class="brand-sub">For Gio · 20 minutes ⚽</span>
+  </div>
+  <div class="topbar-tools">
+    <span class="progress-pill" id="progressPill" aria-live="polite" title="Steps marked complete">0 / 9 done</span>
+    <button class="icon-btn theme-btn" id="themeBtn" type="button" aria-label="Switch to light theme" title="Switch theme">☀️</button>
+  </div>
+  <div class="progressbar" id="progressBar" role="progressbar" aria-label="Course progress" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0"><span></span></div>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Course sections">
+    <div class="search-wrap">
+      <span class="search-ico" aria-hidden="true">🔎</span>
+      <label class="sr-only" for="search">Find a step or a phrase</label>
+      <input id="search" type="search" placeholder="Find a step or a word…" autocomplete="off" spellcheck="false">
+      <p class="search-hint" id="searchHint" aria-live="polite"></p>
+    </div>
+    <div class="nav-list" id="navList"></div>
+    <p class="nav-foot">Read the game. ⚽</p>
+  </nav>
+
+  <div class="scrim" id="scrim" hidden></div>
+
+  <main id="content" class="content" tabindex="-1">
+    <div class="content-inner">
+      <article class="card">
+        <div class="section-head">
+          <div class="sec-emoji" id="sectionEmoji" aria-hidden="true">🎤</div>
+          <div class="sec-meta">
+            <p class="eyebrow" id="sectionGroup"></p>
+            <h1 id="sectionTitle"></h1>
+            <p class="sec-blurb" id="sectionBlurb"></p>
+          </div>
+        </div>
+        <div id="toggleWrap">
+          <label class="done-toggle">
+            <input type="checkbox" id="doneToggle">
+            <span class="done-text" id="doneText">⭐ I finished this step</span>
+          </label>
+        </div>
+        <div class="prose" id="sectionBody"></div>
+        <div id="quizHost" hidden></div>
+        <nav class="pager" aria-label="Section navigation">
+          <button class="pager-btn" id="prevBtn" type="button">← Back</button>
+          <button class="pager-btn" id="nextBtn" type="button">Next step →</button>
+        </nav>
+      </article>
+    </div>
+  </main>
+</div>
+
+<footer class="site-foot">
+  <p>⚽ <strong>Gio's Football Brain</strong> · 20 minutes<br>Offside · shape · pressing · xG · Korea. Think like a manager. 🏆</p>
+</footer>
+
+<script src="content.js"></script>
+<script src="app.js"></script>
+<script src="timer.js"></script>
+</body>
+</html>

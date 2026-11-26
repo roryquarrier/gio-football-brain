@@ -1,0 +1,399 @@
+{
+ "_note": "Quiz bank. 'answer' is a 0-based index into options; 'img' is an optional picture.",
+ "step-01": {
+  "title": "Step 1 — Offside, Properly",
+  "questions": [
+   {
+    "q": "An attacker's feet are exactly LEVEL with the second-last defender when the pass is played. What is the decision?",
+    "options": [
+     "The referee must ask VAR",
+     "Offside",
+     "Onside",
+     "Offside, but only if he scores"
+    ],
+    "answer": 2,
+    "why": "Level counts as onside. He must be nearer the goal line than the second-last opponent to be in an offside position."
+   },
+   {
+    "q": "An attacker's body is behind the defender, but his outstretched arm is ahead of the defender. Offside?",
+    "options": [
+     "Yes — any part of the body counts",
+     "Yes, if the arm touches the ball",
+     "Only if the keeper complains",
+     "No — arms and hands are not used to judge offside"
+    ],
+    "answer": 3,
+    "why": "Only the head, body and feet count. Hands and arms are ignored."
+   },
+   {
+    "q": "A throw-in is taken. The receiver is far beyond the last defender. What happens?",
+    "options": [
+     "Offside, indirect free kick",
+     "Play on — there is no offside from a throw-in",
+     "The throw-in is retaken",
+     "Offside only if he is past the keeper"
+    ],
+    "answer": 1,
+    "why": "You can't be offside directly from a goal kick, throw-in or corner."
+   },
+   {
+    "q": "An attacker is in an offside position, but he does not touch the ball or affect any defender. The ball goes out of play. Offence?",
+    "options": [
+     "Yes, but only inside the penalty area",
+     "Yes, if he was nearer than 5 metres to a defender",
+     "No — being in an offside position is not an offence by itself",
+     "Yes — the position is the offence"
+    ],
+    "answer": 2,
+    "why": "The offence is being INVOLVED in active play, not just standing there."
+   }
+  ]
+ },
+ "step-02": {
+  "title": "Step 2 — Shape & Formations",
+  "questions": [
+   {
+    "q": "Which is the correct description of a 3-5-2?",
+    "options": [
+     "3 midfielders, 5 forwards, 2 defenders",
+     "3 defenders, 5 midfielders, 2 forwards",
+     "3 forwards, 5 defenders, 2 midfielders",
+     "3 attackers, 5 midfielders, 2 defenders"
+    ],
+    "answer": 1,
+    "why": "Formations are written from defence to attack, not counting the goalkeeper."
+   },
+   {
+    "q": "A 3-5-2 team loses the ball. The wing-backs drop deep. What shape does it often become?",
+    "options": [
+     "4-4-2",
+     "3-4-3",
+     "5-3-2",
+     "3-3-4"
+    ],
+    "answer": 2,
+    "why": "Wing-backs join the three centre-backs, so it becomes a back five."
+   },
+   {
+    "q": "A 'false nine' drops into midfield. What problem does that cause the centre-backs?",
+    "options": [
+     "He is automatically offside",
+     "Nothing — the false nine can't touch the ball",
+     "They must swap positions with the goalkeeper",
+     "Follow him and leave a hole, or let him go and give him time"
+    ],
+    "answer": 3,
+    "why": "A false nine pulls defenders out of position or gets free time."
+   },
+   {
+    "q": "Look at the picture in this step. A compact, narrow team is most likely to be beaten:",
+    "options": [
+     "By headers only",
+     "On the wings",
+     "By long shots only",
+     "Through the middle"
+    ],
+    "answer": 1,
+    "why": "Narrow = strong in the middle but gives space wide.",
+    "img": "assets/formations.jpg",
+    "alt": "Eleven red dots in a 4-3-3"
+   }
+  ]
+ },
+ "step-03": {
+  "title": "Step 3 — Pressing",
+  "questions": [
+   {
+    "q": "Team A has a PPDA of 6. Team B has a PPDA of 14. Which team presses harder?",
+    "options": [
+     "Team B — a bigger number means more pressing",
+     "They press equally",
+     "Team A — the opponents get fewer passes before an action",
+     "You can't tell without the xG"
+    ],
+    "answer": 2,
+    "why": "PPDA = passes allowed per defensive action. Lower = more intense press."
+   },
+   {
+    "q": "Which is the BEST example of a pressing trigger?",
+    "options": [
+     "The opponent takes a throw-in near his own goal",
+     "The opponent has a clear shot at goal",
+     "The referee starts the second half",
+     "The opponent passes backwards to his goalkeeper"
+    ],
+    "answer": 3,
+    "why": "A backward pass gives the receiver limited options — a good moment to close in."
+   },
+   {
+    "q": "What is the main risk of a high press?",
+    "options": [
+     "Your goalkeeper must leave the pitch",
+     "One long pass beats the press and leaves space behind your defence",
+     "The referee gives more yellow cards",
+     "You can never win a corner"
+    ],
+    "answer": 1,
+    "why": "The more players push up, the more space you leave behind."
+   },
+   {
+    "q": "What does 'counter-press' mean?",
+    "options": [
+     "Attacking only on counters",
+     "Defending only with 10 players behind the ball",
+     "Taking a free kick quickly",
+     "Trying to win the ball back immediately after losing it"
+    ],
+    "answer": 3,
+    "why": "The other team is disorganised right after winning the ball — the best moment to win it back."
+   }
+  ]
+ },
+ "step-04": {
+  "title": "Step 4 — Expected Goals (xG)",
+  "questions": [
+   {
+    "q": "A team has a penalty (xG 0.76) plus shots of 0.05 and 0.12. What is its total xG?",
+    "options": [
+     "1.93",
+     "0.76",
+     "0.93",
+     "0.17"
+    ],
+    "answer": 2,
+    "why": "0.76 + 0.05 + 0.12 = 0.93."
+   },
+   {
+    "q": "A team loses 0-1 but had 2.4 xG against 0.4 xG. What is the best explanation?",
+    "options": [
+     "xG is always wrong",
+     "The xG must have included the other team's goals",
+     "One game is noisy — they probably were unlucky or the keeper was great",
+     "They must be a bad team"
+    ],
+    "answer": 2,
+    "why": "Over one match luck is large. Over a season xG predicts results better than goals."
+   },
+   {
+    "q": "A team has 70% possession but only 0.3 xG. What does this show?",
+    "options": [
+     "They were the better team",
+     "They must have scored 3 goals",
+     "The xG is broken",
+     "They had the ball a lot but made very few good chances"
+    ],
+    "answer": 3,
+    "why": "Possession is not the same as chance quality."
+   },
+   {
+    "q": "A striker scores more than his xG for five seasons in a row. The most sensible conclusion is that he is:",
+    "options": [
+     "Probably an elite finisher",
+     "Extremely lucky every year",
+     "A bad shooter",
+     "An offside specialist"
+    ],
+    "answer": 0,
+    "why": "One season could be luck — five seasons suggests real finishing skill."
+   }
+  ]
+ },
+ "step-05": {
+  "title": "Step 5 — Korea's Football Story",
+  "questions": [
+   {
+    "q": "What was Korea's best finish at the 2002 World Cup?",
+    "options": [
+     "Semi-final (4th place)",
+     "Round of 16",
+     "Winner",
+     "Quarter-final"
+    ],
+    "answer": 0,
+    "why": "Co-hosts Korea beat Italy and Spain, then lost to Germany in the semi-final."
+   },
+   {
+    "q": "Which team did Korea beat 2-0 in the 2018 World Cup group stage?",
+    "options": [
+     "France",
+     "Germany",
+     "Brazil",
+     "Portugal"
+    ],
+    "answer": 1,
+    "why": "Germany went out in the group stage."
+   },
+   {
+    "q": "Which club did Park Ji-sung play for from 2005 to 2012?",
+    "options": [
+     "Liverpool",
+     "Manchester United",
+     "Eintracht Frankfurt",
+     "Tottenham"
+    ],
+    "answer": 1,
+    "why": "Park spent seven years at Manchester United."
+   },
+   {
+    "q": "In 2018, Korea's second goal against Germany went into an empty net. Why was it empty?",
+    "options": [
+     "The goal had been moved",
+     "The goalkeeper was sent off",
+     "Korea scored from the halfway line with no goalkeeper",
+     "Germany had pushed everyone forward, even the goalkeeper, chasing a goal"
+    ],
+    "answer": 3,
+    "why": "All-out attack means massive space at the other end."
+   }
+  ]
+ },
+ "final-test": {
+  "title": "The Final Test — 12 questions",
+  "questions": [
+   {
+    "q": "Look at the pass. Which ringed attacker is OFFSIDE when the ball is played?",
+    "options": [
+     "The orange ring",
+     "Both",
+     "The white ring",
+     "Neither"
+    ],
+    "answer": 0,
+    "why": "The orange-ringed attacker is beyond the yellow line (the second-last defender) and ahead of the ball. The white-ringed attacker is behind the line — onside.",
+    "img": "assets/quiz-offside.jpg",
+    "alt": "Pitch diagram: a yellow line at the defenders, one attacker ringed in orange beyond it, one ringed in white behind it, a dotted pass arrow"
+   },
+   {
+    "q": "Look at the three shots. Which has the HIGHEST xG?",
+    "options": [
+     "The silver ball — edge of the box",
+     "The gold ball — close to goal, central",
+     "They all have the same xG",
+     "The orange ball — tight angle"
+    ],
+    "answer": 1,
+    "why": "Distance and angle: close and central is by far the best chance.",
+    "img": "assets/quiz-shots.jpg",
+    "alt": "Penalty area with a gold shot close in the middle, a silver shot on the edge of the box, an orange shot from a tight angle"
+   },
+   {
+    "q": "The gold, silver and orange shots have xG of 0.45, 0.07 and 0.03. What is the total?",
+    "options": [
+     "1.55",
+     "0.45",
+     "0.10",
+     "0.55"
+    ],
+    "answer": 3,
+    "why": "0.45 + 0.07 + 0.03 = 0.55. Roughly half a goal.",
+    "img": "assets/quiz-shots.jpg",
+    "alt": "The same three shots"
+   },
+   {
+    "q": "This formation is a 3-5-2. When the team defends, what will it most often look like?",
+    "options": [
+     "A 4-4-2 with no strikers",
+     "A back five (5-3-2)",
+     "A back three with five forwards",
+     "A back two"
+    ],
+    "answer": 1,
+    "why": "The wing-backs drop back to join the three centre-backs.",
+    "img": "assets/quiz-shape.jpg",
+    "alt": "Red dots: 1 goalkeeper, 3 defenders, 5 midfielders, 2 strikers"
+   },
+   {
+    "q": "In the same picture, what is the special job of the two widest midfielders?",
+    "options": [
+     "They stay next to the goalkeeper",
+     "They are wing-backs: defend the whole flank and attack the whole flank",
+     "They only defend",
+     "They only take throw-ins"
+    ],
+    "answer": 1,
+    "why": "A back three needs wing-backs to give width. They need huge stamina.",
+    "img": "assets/quiz-shape.jpg",
+    "alt": "Red dots in 3-5-2"
+   },
+   {
+    "q": "Look at the press. Why are the red players standing in the passing lanes instead of just chasing the ball?",
+    "options": [
+     "To defend a corner",
+     "To block the referee's view",
+     "Because they are tired",
+     "To trap the ball-carrier — no easy pass means an error"
+    ],
+    "answer": 3,
+    "why": "A press works as a group: one presses the ball, the others cut the lanes.",
+    "img": "assets/press.jpg",
+    "alt": "Red players cutting off passing lanes around a blue defender with the ball"
+   },
+   {
+    "q": "A goal kick is taken. An attacker is far beyond the last defender and runs onto the ball. Decision?",
+    "options": [
+     "Goal stands — no offside from a goal kick",
+     "Offside",
+     "Offside only if the keeper takes it",
+     "Retake the goal kick"
+    ],
+    "answer": 0,
+    "why": "Not offside directly from a goal kick, throw-in or corner."
+   },
+   {
+    "q": "A defender desperately blocks a shot and the ball bounces to an attacker who was in an offside position when the shot was taken. Decision?",
+    "options": [
+     "Still offside — a block/deflection is not 'deliberate play'",
+     "Onside — the defender touched it",
+     "No offence because there was a shot",
+     "Retake the shot"
+    ],
+    "answer": 0,
+    "why": "Only a deliberate play (like a controlled pass or clearance) resets offside. A block does not."
+   },
+   {
+    "q": "Team A: 70% possession, 0.4 xG. Team B: 30% possession, 1.6 xG. Which statement is best supported?",
+    "options": [
+     "The match must have ended 0-0",
+     "Team A played much better",
+     "Possession and xG measure the same thing",
+     "Team B created much better chances"
+    ],
+    "answer": 3,
+    "why": "xG measures chance quality. B had the better chances with less of the ball."
+   },
+   {
+    "q": "Team X: PPDA of 7.5. Team Y: PPDA of 16. Which statement is correct?",
+    "options": [
+     "Y presses more intensely",
+     "X presses more intensely and wins the ball higher up the pitch",
+     "They press the same",
+     "PPDA cannot be compared"
+    ],
+    "answer": 1,
+    "why": "Lower PPDA = fewer passes allowed = more aggressive press."
+   },
+   {
+    "q": "Korea beat Germany 2-0 in 2018, scoring after Germany pushed everyone forward. Which tactical idea does this show?",
+    "options": [
+     "Playing with no defenders",
+     "A false nine",
+     "A high press from the first minute",
+     "A compact defence and counter-attack — punishing a team that overcommits"
+    ],
+    "answer": 3,
+    "why": "Germany left huge spaces behind. A compact side that survives can hit them with the second ball."
+   },
+   {
+    "q": "You lead 1-0 against a stronger team with 20 minutes left. Which plan fits best?",
+    "options": [
+     "Compact mid/low block, win it back and counter-attack quickly",
+     "Take a risk by attacking with everyone",
+     "Press very high with a high line",
+     "Play 7-3-0 and give the ball away on purpose"
+    ],
+    "answer": 0,
+    "why": "Protect the lead: stay compact, avoid the big spaces behind a high line, and hit on the counter when the ball is won."
+   }
+  ]
+ }
+}
